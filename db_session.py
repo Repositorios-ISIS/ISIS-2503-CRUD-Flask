@@ -27,10 +27,12 @@ def get_session():
     session = scoped_session(sessionmaker(bind=engine))
     return session
 
-"""
-engine = get_engine_from_settings()
 
+engine = get_engine_from_settings()
+"""
 data = {"nombre":'a',"clave":'123',"cuenta":'123',"direccion":'cra 4'}
 statement = text("INSERT INTO restaurante_restaurante(nombre, clave, cuenta, direccion) VALUES (:nombre, :clave, :cuenta, :direccion)")
 engine.execute(statement,**data)
 """
+#print(engine)
+#print(engine.execute(text("SELECT * FROM restaurante_restaurante")))

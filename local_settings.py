@@ -10,5 +10,5 @@ postgresql = {
     'pgpasswd':'12345678',
     'pghost':'stigmergy.ccdtnafwaca9.us-east-1.rds.amazonaws.com',
     'pgport':5432,
-    'pgdb':'stygmergy'
+    'pgdb':'Stigmergy'
     }
